@@ -1,0 +1,68 @@
+form {
+    margin: 20px 0 50px 80px;
+}
+
+:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+label {
+    font-size: 20px;
+    display: inline-block;
+    width: 260px;
+    color: #666;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel] {
+    font-size: 16px;
+    width: 300px;
+    height: 36px;
+    padding: 8px;
+    margin: 8px 0 20px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+input[type=submit] {
+    padding: 10px 36px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    border: 1px solid #999;
+    margin-left: 102px;
+}
+
+
+input[type=checkbox] {
+    margin: 0 20px 20px 265px;
+}
+
+textarea {
+    resize: none;
+    vertical-align: top;
+    font-size: 16px;
+    width: 500px;
+    height: 80px;
+    padding: 8px;
+    margin: 8px 0 20px 0;
+    border: none;
+    border-bottom: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    border-right: 1px solid #999;
+}
+
+@media screen and (max-width: 893px) {
+    input[type=checkbox] {
+        margin: 0 20px 20px 0;
+    }
+}

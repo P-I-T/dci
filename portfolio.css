@@ -1,0 +1,242 @@
+/* All Pages */
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 0.08em;
+    line-height: 1.6em;
+    font-size: 110%;
+    background: #000;
+    color: #fff;
+    position: relative;
+    padding-top: 80px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 50px;
+}
+
+h1 {
+    margin: 50px 0 25px 50px;
+}
+
+h1,
+h2,
+nav,
+p {
+    font-weight: 300;
+}
+
+h2 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 1.4em;
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 12px 16px;
+}
+
+nav a:hover {
+    color: #917BE7;
+}
+
+nav a.active {
+    color: #00f700;
+}
+
+main section i {
+    font-size: 6em;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8em;
+}
+
+/* Landing Page */
+
+body#start {
+    background-image: url(images/css-code-bw.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+
+#start main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.portrait {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+div.portrait img {
+    height: 100%;
+    transform: translate(-50px);
+    filter: grayscale(100%);
+}
+
+#start h1 {
+    font-size: 2.5em;
+    line-height: 2em;
+    color: #00f700;
+    s
+}
+
+#start h2 {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: white;
+    margin: 50px 0 25px 50px;
+}
+
+/* Web Development and CMS */
+
+#black main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+#black h2 {
+    color: #00f700;
+    font-size: 2em;
+}
+
+#black section.left {
+    flex: 1 1 120px;
+    text-align: center;
+}
+
+#black section.right {
+    flex: 0 1 calc(100% - 180px);
+}
+
+/* CV */
+
+body#cv {
+    background-color: #fff;
+    color: #333;
+}
+
+#cv main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+#cv section.left {
+    flex: 1 1 120px;
+    text-align: center;
+}
+
+#cv section.right {
+    flex: 0 1 calc(100% - 210px);
+}
+
+body#cv footer p {
+    color: #fff;
+}
+
+/* Contact */
+
+body#contact {
+    background-color: #fff;
+    color: #333;
+}
+
+body#contact footer p {
+    color: #fff;
+}
+
+/* Design */
+
+#design main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#design section {
+    margin-bottom: 20px;
+}
+
+#design section.left {
+    flex: 1 1 420px;
+}
+
+#design section.right {
+    flex: 1 1 calc(100% - 500px);
+    min-width: 480px;
+}
+
+#design h2 {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 640px) {
+
+    #black main,
+    #design main,
+    #cv main,
+    #start main,
+    #design section.left,
+    #design section.right,
+    #black section.left,
+    #black section.right,
+    #cv section.left,
+    #cv section.right {
+        display: block;
+    }
+
+    main {
+        margin: 50px 10px;
+    }
+
+    h1 {
+        margin-left: 10px;
+    }
+
+    #start h2 {
+        margin-left: 20px;
+    }
+}

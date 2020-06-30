@@ -2,19 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact</title>
+    <link href="normalize.css" rel="stylesheet" media="all">
+    <link href="portfolio.css" rel="stylesheet" media="all">
+    <link href="contact.css" rel="stylesheet" media="all"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
-<body>
-    <header></header>
-    
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="service.html">Service</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<body id="contact">
+   
+   <header>
+       <nav>
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="design.html">Design</a></li>
+               <li><a href="dev.html">Development</a></li>
+               <li><a href="cms.html">CMS</a></li>
+               <li><a class="active" href="contact.html">Contact</a></li>
+               <li><a href="cv.html">CV</a></li>
+           </ul>
+       </nav>
+   </header>
+   
+   <main>
+      
+      <h1>Contact Me!</h1>
+      
+       <form>
 
-    <h1>CONTACT</h1>
+        <label for="firstname">Your Name*</label>
+        <input type="text" name="firstname" placeholder="Enter your name please" autofocus required><br>
+
+        <label for="email">E-Mail Adress*</label>
+        <input type="email" name="email" placeholder="Enter your e-mail adress"  required><br>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number, if you want"><br>
+
+        <label for="message">Message*</label>
+        <textarea name="message" placeholder="Your message" required></textarea><br>
+
+        <input type="checkbox" checked>
+        <label for="news">Newsletter Subscription</label>
+
+        <input type="submit" value="Send" />
+    </form>
+   </main>
+   
+   <footer>
+        <p>&copy; 2019 Jörg Pietschmann</p>
+        <p>Imprint</p>
+    </footer>
     
-    <footer></footer>    
 </body>
 </html>
